@@ -29,7 +29,7 @@ class project extends Model
         $check = in_array($extension,$allowedfileExtension);
 
         if (in_array($extension,$allowedfileExtension)) {
-            $file->move(public_path('images'), $filename);
+            $file->move(public_path('images/project_images/'), $filename);
             $this->project_images()->create(['name' => $filename]);
         } else {
             return view('project_images.addNew')->withErrors(["file"=>"Your custom error message!"]);
