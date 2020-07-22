@@ -75,6 +75,8 @@ Route::get('/projects/{project}', "HomeController@projectPage");
 Route::get('/about', "HomeController@aboutPage");
 Route::get('/contact', "HomeController@contactPage");
 
+Route::get('test', 'TestController@index');
+
 
 
 
