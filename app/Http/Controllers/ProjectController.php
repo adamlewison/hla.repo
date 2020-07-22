@@ -16,23 +16,18 @@ class ProjectController extends Controller
     public function show (project $project) {
         $project->load('project_images');
         //return $project;
-        return view('projects.show', compact('project'));
-    }
-
-    public function update(project $project) {
-        //return request()->all();
-        $project->update( request()->all() );
-        flash('Success!');
-        return back();
+        return view('admin.projects.show', compact('project'));
     }
 
     public function delete(project $project) {
+        $title = $project->title;
         $project->delete();
+        flash( $title .' has been deleted', 'info');
         return back();
     }
 
     public function newImage(Request $request, project $project) {
-        return view('project_images.addNew', ['project' => $project]);
+        return view('admin.project_images.addNew', ['project' => $project]);
     }
 
     public function addImages(project $project) {
@@ -48,6 +43,41 @@ class ProjectController extends Controller
             $project->addImage($file);
         }
 
-        return redirect('/projects/'.$project->id);
+        return redirect('/admin/projects/'.$project->id);
+    }
+
+    public function new() {
+
+        request()->validate([
+            'category'  => 'required',
+            'title'     => 'required'
+        ]);
+
+        $args = (array) request()->all();
+        if (!isset($args['live'])) {
+            $args['live'] ='off';
+        }
+
+        $project = project::create($args);
+
+        flash("This is your fresh new project!");
+        return redirect('/admin/projects/'.$project->id);
+    }
+
+    public function update(project $project) {
+
+        request()->validate([
+            'category'  => 'required',
+            'title'     => 'required'
+        ]);
+
+        $args = (array) request()->all();
+        if (!isset($args['live'])) {
+            $args['live'] ='off';
+        }
+
+        $project->update( $args );
+        flash('Success!');
+        return back();
     }
 }

@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a39f215b-d5ac-4e90-aa5a-96e6bcc636d0" name="Default Changelist" comment="" />
+    <list default="true" id="a39f215b-d5ac-4e90-aa5a-96e6bcc636d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ced234d3-d40c-43df-9b89-ab3ec63f7274.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ced234d3-d40c-43df-9b89-ab3ec63f7274.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project_image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/project_image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/[prj104]10273557_10154374924445294_6378046473088846485_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/[prj104]19247953_10155430515699166_5106242240766517159_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/[prj104]32840501_IMG-20181204-WA0031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/[prj104]43215F81-ACA5-4290-B5E4-D204339C601A.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/[prj73]10273557_10154374924445294_6378046473088846485_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/[prj90]19247953_10155430515699166_5106242240766517159_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/clickable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/clickable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/clickable.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/clickable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/project_images/addNew.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/project_images/addNew.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -45,17 +81,13 @@
         <item name="hlacogtd_hla@197.242.144.134" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="hlacogtd_hla: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="project_images: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hlacogtd_hla@197.242.144.134" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="hlacogtd_hla: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="projects: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="categories: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HierarchyBrowserManager">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
@@ -164,24 +196,34 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1eP77D0UY821kFHW6CS3gG0gkhV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/main" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/main" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -190,11 +232,38 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="hlacogtd_hla@197.242.144.134: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="hlacogtd_hla@197.242.144.134: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6e8b3b4b" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="hlacogtd_hla@197.242.144.134: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@361dde8" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",Show Includes" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -203,37 +272,113 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594211204922</updated>
-      <workItem from="1594211210765" duration="26661000" />
+      <workItem from="1594211210765" duration="27065000" />
+      <workItem from="1594294379727" duration="10573000" />
+      <workItem from="1594381047551" duration="18742000" />
+      <workItem from="1594641902782" duration="27960000" />
+      <workItem from="1594895840928" duration="2243000" />
+      <workItem from="1595427936331" duration="2212000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="0" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594212867418">
       <screen x="0" y="23" width="1440" height="849" />
     </state>
     <state x="0" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.849@0.23.1440.849" timestamp="1594212867418" />
-    <state x="471" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1594226121994">
+    <state x="471" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1594294762635">
       <screen x="0" y="23" width="1440" height="849" />
     </state>
-    <state x="471" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.849@0.23.1440.849" timestamp="1594226121994" />
-    <state x="500" y="282" width="467" height="326" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1594225091038">
+    <state x="471" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.849@0.23.1440.849" timestamp="1594294762635" />
+    <state x="79" y="150" key="CommitChangelistDialog2" timestamp="1594294967142">
       <screen x="0" y="23" width="1440" height="849" />
     </state>
-    <state x="500" y="282" width="467" height="326" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1440.849@0.23.1440.849" timestamp="1594225091038" />
-    <state x="463" y="138" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1594242780254">
+    <state x="79" y="150" key="CommitChangelistDialog2/0.23.1440.849@0.23.1440.849" timestamp="1594294967142" />
+    <state x="435" y="367" key="ComposerInitDialogKey" timestamp="1594294340347">
       <screen x="0" y="23" width="1440" height="849" />
     </state>
-    <state x="463" y="138" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1440.849@0.23.1440.849" timestamp="1594242780254" />
-    <state x="163" y="280" key="com.intellij.ide.util.TipDialog" timestamp="1594211210783">
+    <state x="435" y="367" key="ComposerInitDialogKey/0.23.1440.849@0.23.1440.849" timestamp="1594294340347" />
+    <state x="100" y="123" width="1240" height="649" key="DiffContextDialog" timestamp="1594498392095">
       <screen x="0" y="23" width="1440" height="849" />
     </state>
-    <state x="163" y="280" key="com.intellij.ide.util.TipDialog/0.23.1440.849@0.23.1440.849" timestamp="1594211210783" />
-    <state x="447" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1594238255909">
+    <state x="100" y="123" width="1240" height="649" key="DiffContextDialog/0.23.1440.849@0.23.1440.849" timestamp="1594498392095" />
+    <state x="292" y="347" width="652" height="199" key="Github.ShareDialog" timestamp="1595428741882">
+      <screen x="0" y="23" width="1440" height="847" />
+    </state>
+    <state x="292" y="347" width="652" height="199" key="Github.ShareDialog/0.23.1440.847@0.23.1440.847" timestamp="1595428741882" />
+    <state width="796" height="221" key="GridCell.Tab.0.bottom" timestamp="1594304200546">
       <screen x="0" y="23" width="1440" height="849" />
     </state>
-    <state x="447" y="196" width="670" height="676" key="search.everywhere.popup/0.23.1440.849@0.23.1440.849" timestamp="1594238255909" />
+    <state width="796" height="221" key="GridCell.Tab.0.bottom/0.23.1440.849@0.23.1440.849" timestamp="1594304200546" />
+    <state width="796" height="221" key="GridCell.Tab.0.center" timestamp="1594304200545">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state width="796" height="221" key="GridCell.Tab.0.center/0.23.1440.849@0.23.1440.849" timestamp="1594304200545" />
+    <state width="796" height="221" key="GridCell.Tab.0.left" timestamp="1594304200545">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state width="796" height="221" key="GridCell.Tab.0.left/0.23.1440.849@0.23.1440.849" timestamp="1594304200545" />
+    <state width="796" height="221" key="GridCell.Tab.0.right" timestamp="1594304200546">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state width="796" height="221" key="GridCell.Tab.0.right/0.23.1440.849@0.23.1440.849" timestamp="1594304200546" />
+    <state x="324" y="378" key="NewPhpFileDialog" timestamp="1594381569978">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state x="324" y="378" key="NewPhpFileDialog/0.23.1440.849@0.23.1440.849" timestamp="1594381569978" />
+    <state x="0" y="86" key="SettingsEditor" timestamp="1594895879824">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state x="0" y="86" key="SettingsEditor/0.23.1440.849@0.23.1440.849" timestamp="1594895879824" />
+    <state x="500" y="282" width="467" height="322" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1594493892607">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state x="500" y="282" width="467" height="322" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1440.849@0.23.1440.849" timestamp="1594493892607" />
+    <state x="463" y="138" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1594499553021">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state x="463" y="138" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1440.849@0.23.1440.849" timestamp="1594499553021" />
+    <state x="163" y="280" key="com.intellij.ide.util.TipDialog" timestamp="1594895841236">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state x="163" y="280" key="com.intellij.ide.util.TipDialog/0.23.1440.849@0.23.1440.849" timestamp="1594895841236" />
+    <state x="503" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594294957695">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state x="503" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.849@0.23.1440.849" timestamp="1594294957695" />
+    <state x="447" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1594897220259">
+      <screen x="0" y="23" width="1440" height="849" />
+    </state>
+    <state x="447" y="196" width="670" height="676" key="search.everywhere.popup/0.23.1440.849@0.23.1440.849" timestamp="1594897220259" />
   </component>
 </project>

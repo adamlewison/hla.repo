@@ -83,9 +83,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    HLArchitects Administration
+                    HLArchitects
                 </div>
-
+                <div>
+                    <a href="admin">Go to admin section</a>
+                </div>
             </div>
         </div>
     </body>

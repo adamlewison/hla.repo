@@ -1,72 +1,75 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+    <div class="container">
 
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="v-pills-profile-tab" href="/{{admin_page('/projects')}}" role="tab" aria-controls="v-pills-profile" aria-selected="false">Projects</a>
+                    <a class="nav-link" id="v-pills-messages-tab" href="/{{admin_page('/notes')}}" role="tab" aria-controls="v-pills-messages" aria-selected="false">Notes</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="http://www.hla.co.za/images/project_images/{{\App\project_image::getRandomImage()->name}}" alt="" class="changing-picture">
+            </div>
+        </div>
 
+        <div class="row some-row">
+            <div class="col-12">1</div>
+        </div>
+        <div class="row some-row">
+            <div class="col-12">2</div>
+        </div>
+        <div class="row some-row" data-clickable-activate="#addbtn:/add">
+            <div class="col-12">3</div>
+        </div>
+        <div class="row some-row">
+            <div class="col-12">4</div>
+        </div>
 
-                    <!--
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                    -->
-
-                    <div class="row justify-content-md-center p-3">
-                        <div class="col-md-6">
-                            <input type="text" placeholder="Search Projects..." name="project_name" class="form-control project-search-bar">
-                        </div>
-
-                    </div>
-
-                    @foreach(\App\project::all() as $project)
-
-                            <div class="row project-row p-2 border-bottom pb-3 " data-search-name="{{ $project->title }}">
-
-                                <div class="d-flex col">
-                                    @if($project->thumb)
-                                        <img src="http://www.hla.co.za/images/project_images/{{$project->thumb}}" alt="" class="rounded" height="50px">
-                                    @else
-                                        <img src="https://placeimg.com/640/480/arch" alt="" class="rounded-0" height="50px">
-                                    @endif
-                                    <h4 class="ml-2 mt-2">
-                                        {{$project->title}}
-                                    </h4>
-                                </div>
-
-
-                                <div class="pull-right mt-3 ">
-                                    <a href="projects/{{$project->id}}" class="text-primary">
-                                        edit
-                                    </a>
-                                     |
-                                    <a href="projects/{{$project->id}}/delete" class="text-danger">
-                                        delete
-                                    </a>
-                                </div>
-                            </div>
-
-                    @endforeach
-
-
-</div>
+        <a id="addbtn" href="#">
+            <button style="btn" disabled>
+                Click me
+            </button>
+        </a>
+    </div>
 @endsection
 
 @section('scripts')
-<script>
-    $(document).ready(function () {
-        $('.project-search-bar').keyup(function () {
-            $('.project-row').hide();
-            console.log("here");
-            search = $(this).val();
-            $('.project-row').each(function (i,v) {
 
-                if ($(v).attr('data-search-name').toLowerCase().includes(search.toLowerCase())) {
-                    $(v).show();
-                }
-            });
-        })
-    })
-</script>
+    <style>
+        .changing-picture {
+            transition: opacity .5s ease-out;
+            -moz-transition: opacity .5s ease-out;
+            -webkit-transition: opacity .5s ease-out;
+            -o-transition: opacity .5s ease-out;
+        }
+
+    </style>
+
+    <!--suppress VueDuplicateTag -->
+    <script>
+
+        $(document).ready(function(){
+
+            c = new Clickable('.some-row', {action: 'click', style: {color: 'green'} } );
+
+            src = $('.changing-picture').attr('src');
+            url = src.substring(0, src.lastIndexOf('/') + 1);
+
+            setInterval(function () {
+                $.getJSON('/random', function (data) {
+                    $('.changing-picture').css('opacity', 0);
+                    setTimeout(function(){
+                        $('.changing-picture').attr('src', url + data.name);
+                        $('.changing-picture').css('opacity', 1);
+                    },250);
+
+                });
+            }, 3000)
+        });
+
+    </script>
 @endsection

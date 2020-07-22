@@ -9,11 +9,15 @@ use Illuminate\Http\Request;
 class project extends Model
 {
     protected $fillable = [
-        'title', 'category', 'info', 'thumb', 'client', 'type', 'size'
+        'title', 'category', 'info', 'thumb', 'client', 'type', 'size', 'live'
     ];
 
     public function project_images() {
         return $this->hasMany(\App\project_image::class);
+    }
+
+    public function category() {
+        return $this->hasOne(\App\Category::class);
     }
 
     public function addImage($file) {
@@ -30,7 +34,7 @@ class project extends Model
         } else {
             return view('project_images.addNew')->withErrors(["file"=>"Your custom error message!"]);
         }
-
-
     }
+
+
 }

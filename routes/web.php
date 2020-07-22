@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 function admin_page($url) {
-    $adminurl = '';
+    $adminurl = 'admin';
     return $adminurl . $url;
 }
 
@@ -27,25 +27,54 @@ function main_site($url) {
     return $mainsiteurl . $url;
 }
 
+
 Route::get(admin_page('/'), function () {
-    return view('welcome');
+    return view('admin.welcome');
 });
 
-Route::get(admin_page('/home'), 'HomeController@index')->name('home');
-Route::get(admin_page('/projects'), 'HomeController@index')->name('home');
+Route::get(main_site('/home'), 'HomeController@index')->name('home');
 
-Route::get(admin_page('/projects/{project}'), 'ProjectController@show');
+Route::get(admin_page('/home'), 'HomeController@index');
+Route::view(admin_page('/projects'), 'admin.projects');
+Route::view(admin_page('/categories'), 'admin.categories.index');
+
+Route::get(admin_page('/projects/create'), 'AdminController@newProject');
+Route::get(admin_page('/projects/{project}'), 'AdminController@show');
+Route::get(admin_page('/projects/{project}/addImage'), 'AdminController@newImage');
+
+// Actions to be done to a project
 Route::get('/projects/{project}/delete', 'ProjectController@delete');
+Route::post('/projects/{project}/update', 'ProjectController@update');
+Route::post('/projects/new', 'ProjectController@new');
+Route::post('/projects/{project}/addImage', 'ProjectController@addImages');
 
-Route::get(admin_page('projects/{project}/addImage'), 'ProjectController@newImage');
-Route::post(admin_page('projects/{project}/addImage'), 'ProjectController@addImages');
+// Actions to be done to a project_image
+Route::get('/project_images/{image}/setthumb', 'ProjectImageController@setAsThumb');
+Route::get('/project_images/{image}/delete', 'ProjectImageController@delete');
 
+// Actions to be done to a category
+Route::post('/categories/create', 'CategoryController@create');
+Route::get('/categories/{category}/delete', 'CategoryController@delete');
+Route::post('/categories/{category}/edit', 'CategoryController@edit');
 
+// Random Image API
+Route::get('/random', function () {
+     $img = App\project_image::getRandomImage();
+    return $img;
+});
 
-Route::post(admin_page('/projects/{project}/update'), 'ProjectController@update');
+Route::get('/random/{project}', function ($project) {
+    $img = App\project_image::getRandomImage($project);
+    return $img;
+});
 
-Route::get(admin_page('project_images/{image}/setthumb'), 'ProjectImageController@setAsThumb');
-Route::get(admin_page('project_images/{image}/delete'), 'ProjectImageController@delete');
+// Consumer Website routes
+Route::get('/', "HomeController@homePage");
+Route::get('/projects', "HomeController@projectsPage");
+Route::get('/projects/{project}', "HomeController@projectPage");
+Route::get('/about', "HomeController@aboutPage");
+Route::get('/contact', "HomeController@contactPage");
+
 
 
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\project;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,7 +14,13 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => [
+            'homePage',
+            'projectsPage',
+            'aboutPage',
+            'contactPage',
+            'projectPage'
+        ]]);
     }
 
     /**
@@ -23,6 +30,28 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('admin.home');
+    }
+
+    public function homePage() {
+        return view('main.index');
+    }
+
+    public function projectsPage() {
+        return view('main.projects');
+    }
+
+    public function contactPage() {
+        return view('main.contact');
+    }
+
+    public function aboutPage() {
+        return view('main.about');
+    }
+
+    public function projectPage(project $project) {
+        $project->load('project_images');
+        //dd($project);
+        return view('main.project', ['project' => $project]);
     }
 }

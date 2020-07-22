@@ -10,7 +10,8 @@
             @csrf
 
             <div class="form-group">
-                <input type="file" name="images[]" placeholder="title" class="form-control" multiple>
+                <label>Select multiple images by holding shift</label>
+                <input type="file" name="images[]" placeholder="title" class="form-control-file" multiple>
             </div>
 
             <input type="submit" class="btn btn-block btn-dark" value="submit">

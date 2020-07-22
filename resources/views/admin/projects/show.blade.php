@@ -17,7 +17,11 @@
             </div>
 
             <div class="form-group">
-                <input type="text" name="category" value="{{$project->category}}" placeholder="category" class="form-control">
+                <select name="category" class="form-control">
+                    @foreach(App\Category::all()->sortBy('name') as $category)
+                        <option value="{{$category->name}}" {{$project->category == $category->name ? 'selected' : ''}}>{{$category->name}}</option>
+                    @endforeach
+                </select>
             </div>
 
             <div class="form-group">
@@ -34,6 +38,11 @@
 
             <div class="form-group">
                 <input type="text" name="client" value="{{$project->client}}" placeholder="client" class="form-control">
+            </div>
+
+            <div class="form-group form-check">
+                <input name="live" type="checkbox" class="form-check-input" {{ $project->live == 'on' ? "checked='checked'" : '' }}>
+                <label class="form-check-label"  >live on website</label>
             </div>
 
             <input type="submit" class="btn btn-block btn-dark" value="edit">
