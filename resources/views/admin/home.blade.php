@@ -15,25 +15,6 @@
                 <img src="http://www.hla.co.za/images/project_images/{{\App\project_image::getRandomImage()->name}}" alt="" class="changing-picture">
             </div>
         </div>
-
-        <div class="row some-row">
-            <div class="col-12">1</div>
-        </div>
-        <div class="row some-row">
-            <div class="col-12">2</div>
-        </div>
-        <div class="row some-row" data-clickable-activate="#addbtn:/add">
-            <div class="col-12">3</div>
-        </div>
-        <div class="row some-row">
-            <div class="col-12">4</div>
-        </div>
-
-        <a id="addbtn" href="#">
-            <button style="btn" disabled>
-                Click me
-            </button>
-        </a>
     </div>
 @endsection
 
@@ -53,8 +34,6 @@
     <script>
 
         $(document).ready(function(){
-
-            c = new Clickable('.some-row', {action: 'click', style: {color: 'green'} } );
 
             src = $('.changing-picture').attr('src');
             url = src.substring(0, src.lastIndexOf('/') + 1);
