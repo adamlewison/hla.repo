@@ -32,7 +32,7 @@ class project extends Model
             $file->move(public_path('images/project_images/'), $filename);
             $this->project_images()->create(['name' => $filename]);
         } else {
-            return view('project_images.addNew')->withErrors(["file"=>"Your custom error message!"]);
+            return view('admin.project_images.addNew')->withErrors(["file"=>"Unable to upload that photo!"]);
         }
     }
 
