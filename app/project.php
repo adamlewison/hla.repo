@@ -23,7 +23,7 @@ class project extends Model
     public function addImage($file) {
 
 
-        $allowedfileExtension=['jpg','png', 'jpeg'];
+        $allowedfileExtension=['jpg','png', 'jpeg', 'JPG'];
         $filename = "[prj$this->id]" . $file->getClientOriginalName();
         $extension = $file->getClientOriginalExtension();
         $check = in_array($extension,$allowedfileExtension);
